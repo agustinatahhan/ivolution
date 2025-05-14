@@ -30,6 +30,9 @@ export default function Atletas() {
   const router = useRouter();
   const [busqueda, setBusqueda] = useState("");
   const [atletas, setAtletas] = useState(atletasIniciales);
+  if (windowWidth === 0) {
+    return null;
+  }
 
   const filtrados = atletas.filter((atleta) =>
     atleta.toLowerCase().includes(busqueda.toLowerCase())
@@ -97,7 +100,7 @@ export default function Atletas() {
               : {},
           ]}
           onPress={() => router.push("/(tabs)/nuevoAtleta")}
-          >
+        >
           <Ionicons name="person-add" size={28} color={Colors.text.blanco} />
         </TouchableOpacity>
       </View>
@@ -140,7 +143,7 @@ const styles = StyleSheet.create({
     paddingLeft: 12,
     paddingRight: 0,
     width: "100%",
-    height: 40, 
+    height: 40,
   },
 
   buttonSearch: {

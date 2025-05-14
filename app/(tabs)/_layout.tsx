@@ -41,17 +41,16 @@ export default function TabLayout() {
           height: 70 + insets.bottom, // Ajustar altura para Safe Area
           paddingBottom: 5 + insets.bottom, // Aumentar padding inferior
           paddingTop: 10,
-          
         },
       }}
     >
       <Tabs.Screen
-        name="perfil"
+        name="config"
         options={{
-          tabBarLabel: "Perfil",
+          tabBarLabel: "Config",
           tabBarIcon: ({ color }) => (
             <Image
-              source={require("@/assets/images/perfil.png")}
+              source={require("@/assets/images/config.png")}
               style={{ width: 24, height: 24, tintColor: color }}
               resizeMode="contain"
             />
@@ -110,16 +109,13 @@ export default function TabLayout() {
           ),
         }}
       />
-  <Tabs.Screen
-  name="nuevoAtleta"
-  options={{
-    href: null,          // 🔥 oculto y sin espacio
-    title: "Nuevo Atleta",
-  }}
-/>
-
-
-
+      <Tabs.Screen
+        name="nuevoAtleta"
+        options={{
+          href: null,
+          title: "Nuevo Atleta",
+        }}
+      />
     </Tabs>
   );
 }
