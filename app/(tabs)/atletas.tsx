@@ -68,11 +68,9 @@ export default function Atletas() {
             <Pressable
               style={styles.buttonSearch}
               onPress={() => {
-                // Acción al presionar la lupa
                 console.log("Buscar: ", busqueda);
               }}
             >
-              {/* <Ionicons name="search" size={20} color={Colors.text.blanco} /> */}
               <Image
                 source={require("@/assets/images/search.png")}
                 style={{ width: 20, height: 20 }}

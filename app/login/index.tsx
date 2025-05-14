@@ -98,12 +98,11 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: Colors.background,
     justifyContent: 'center',
-    alignItems: 'center', // Centra todo horizontalmente
+    alignItems: 'center', 
     padding: 20,
   },
   formContainer: {
-    // Esto se ajusta dinámicamente con width en el componente
-    alignItems: 'stretch', // Los hijos toman el ancho total
+    alignItems: 'stretch',
   },
   logo: {
     width: 256,
@@ -115,7 +114,7 @@ const styles = StyleSheet.create({
   label: {
     color: Colors.text.blanco,
     marginBottom: 8,
-    textAlign: 'left', // 👈 Esto alinea las labels a la izquierda
+    textAlign: 'left', 
   },
   input: {
     backgroundColor: Colors.text.blanco,
